@@ -51,6 +51,7 @@ public class AcademicResultEvaluator {
  /**
  * Entry point to test the evaluator with a set of sample marks,
  * including edge cases (negative and above 100).
+     * @param args
  */
     public static void main(String[] args) {
         
