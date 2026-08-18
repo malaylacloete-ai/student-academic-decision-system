@@ -26,5 +26,20 @@ public class AcademicResultEvaluator {
             return "Fail";
         }
     }
+    public static void main(String[] args) {
 
+        int[] testMarks = {95, 80, 65, 55, 40, -5, 150};
+
+        for (int mark : testMarks) {
+
+            AcademicResultEvaluator student =
+                    new AcademicResultEvaluator(mark);
+
+            System.out.println(
+                    "Mark: " + mark
+                    + " | Valid: " + student.isMarkValid()
+                    + " | Result: " + student.determineAcademicResult()
+            );
+        }
+    }
 }
